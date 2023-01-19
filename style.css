@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+}
+
+.main{
+  display: flex;
+  height: 54rem;
+  
+}
+
+.logo-container{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-image: url("vr-background.avif");
+  background-size:180%;
+  background-position: 70%;
+}
+
+.form{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.logo-name{
+  background-color: black;
+  color: azure;
+  margin-top: 60%;
+  height: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.image-font{
+    
+}
+
+#text,
+#form,
+#button{
+  height: 33.33%;
+  padding-left: 5%;
+}
+#text{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+}
+#form{
+  background-color: azure;
+}
+p{
+  font-size: 18px;
+}
+
+#button{
+  display: flex;
+  flex-direction: column;
+}
+#create-account{
+  width: 9%;
+  color: white;
+  background-color: rgb(76, 2, 142);
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: blue;
+  font-size: 12px;
+
+  padding: 7px;
+  
+}
+
+#text-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#text-call{
+  margin: 0;
+}
