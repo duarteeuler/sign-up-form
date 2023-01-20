@@ -5,9 +5,10 @@
 .main{
   display: flex;
   height: 54rem;
-  
+  font-family: Fira Sans Condensed;
 }
 
+/*Logo section*/
 .logo-container{
   width: 30%;
   height: 100%;
@@ -29,14 +30,6 @@
   width: 100px;
 }
 
-.form{
-  width: 70%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .logo-name{
   background-color: black;
   opacity: 0.75;
@@ -50,68 +43,81 @@
   justify-content: center;
 }
 
+/*General Style for Text, Form and create acount Section*/
 #text,
 #form,
-#button{
-  height: 33.33%;
+#button-container{
+  /*height: 50%;*/
   padding-left: 5%;
 }
 
-#text{
-  margin: 0;
+.hero{
+  width: 70%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: space-evenly;
+}
+
+/*Text Section*/
+#text{ 
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-self: center;
-}
-
-#form-background{
-  background-color: azure;
-}
-
-p{
-  font-size: 18px;
-}
-
-#button{
-  display: flex;
-  flex-direction: column;
-}
-
-#create-account{
-  width: 9%;
-  color: white;
-  background-color: rgb(76, 2, 142);
-  border-radius: 5px;
-  border-width: 1px;
-  border-color: blue;
-  font-size: 12px;
-
-  padding: 7px;
 }
 
 #text-main{
   display: flex;
   align-items: center;
   justify-content: center;
-
+  max-width: 70%;
 }
 
 #text-call{
-  margin: 0;
-  display: flex;
-  text-align: left;
+  margin-top: 30px;
 }
 
-#form{
-  
+/*Form section*/
+
+#form-background{
+  background-color: rgb(238, 169, 255);
 }
 
 #name,
 #contact,
 #password{
   display: flex;
+}
+
+input{
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 3px;
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid blueviolet;
+}
+
+/*button*/
+
+#button-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#button-sign-up{
+  width: 9%;
+  color: white;
+  background-color: rgb(76, 2, 142);
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 7px;
+}
+
+#button-sign-up:hover{
+  background-color: white;
+  color: rgb(76,2,142);
 }
